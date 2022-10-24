@@ -1,14 +1,14 @@
 import React from 'react';
-import CardGrande from './components/CardGrande';
+import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import styled, { createGlobalStyle } from 'styled-components'
 import imagemPerfil from "./img/DP-Brock.png"
-import { CardPequeno } from './component/CardPequeno';
+import CardPequeno from './components/CardPequeno/CardPequeno';
 import downArrow from "./img/down-arrow.png"
 import iconePedra from "./img/rock-symbol.jpg"
 import iconeEstadio from "./img/pewter-gym.jpg"
-import iconeEmail from "./img/email"
-import iconePin from "../img/pin-endereco.png"
+import iconeEmail from "./img/email.png"
+import iconePin from "./img/pin-endereco.png"
 import iconeFB from "./img/facebook-logo-3.png"
 import iconeTT from "./img/twitter-logo-1-1.png"
 
@@ -64,7 +64,7 @@ function App() {
       <SectionPagina>
         <Titulos>Dados pessoais</Titulos>
         <CardGrande
-          imagem={perfil.image}
+          imagem={perfil.imagem}
           nome={perfil.nome}
           descricao={perfil.descricao}
         />
